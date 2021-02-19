@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    height: 100px;
+    background-color: #000000;
+    color: #ffffff
+}
+
+.container {
+    max-width: 1140px;
+    height: 100px;
+    margin:auto;
+    display: flex
+}
+
+.logo {
+    width: 100px;
+}
+
+.menu {
+    flex:1;
+    background-color:red
+}
+
+.logoimg {
+    width: 80px;
+    height: 80px;
+    background-color: #B28756
+}
