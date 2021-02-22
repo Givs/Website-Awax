@@ -68,3 +68,87 @@ header {
     color: #b28756
 }
 
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slider {
+    width: 100vw;
+    height:100%;
+    display: inline-block;
+    background-color: rgba(0,0,0, 0.8)
+}
+
+.banner .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items:center;
+    color: #fff;
+    justify-content:center
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 70px
+}
+
+.banner h1 span {
+    color: #B28756
+}
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px
+}
+.banner .button {
+    display: block;
+    background-color:#B28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600px;
+    margin-top: 50px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.banner .button:hover{
+    background-color: #806343
+}
+
+.banner .sliderpointers {
+    width: 100vw;
+    height: 20px;
+    position:absolute;
+    margin-top: -50px;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #806343;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer
+}
+
+.banner .pointer.active {
+    background-color: #806343
+}
