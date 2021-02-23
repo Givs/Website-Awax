@@ -6,14 +6,16 @@
 
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: px
+    font-size: 13px;
+    overflow-x: hidden;
+
 }
 
 
 header {
     height: 100px;
     background-color: #000000;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .container {
@@ -111,8 +113,8 @@ header {
     text-transform: uppercase;
     margin-top: 20px
 }
-.banner .button {
-    display: block;
+.banner .button, .button {
+    display: inline-block;
     background-color:#B28756;
     color: #fff;
     text-transform: uppercase;
@@ -150,5 +152,274 @@ header {
 }
 
 .banner .pointer.active {
+    background-color: #806343
+}
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.default .sectiontitle, .default .sectiondesc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .sectiontitle {
+    font-size: 30px;
+}
+
+.default .sectiondesc {
+    font-size: 15px;
+    color: #ccc;
+    margin-top: 13px;
+    margin-bottom: 40px
+}
+
+.default .sectionbody {
+    max-width: 1140px;
+    margin:auto;
+}
+
+.default.ligth {
+    background-color: #F7F7F7;
+}
+.default.ligth .sectiontitle, .default.ligth .sectionbody {
+    color:#000;
+}
+
+.default.dark {
+    background-color: #000;
+}
+.default.dark .sectiontitle,.default.dark .sectionbody {
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutus {
+    display:flex
+}
+
+.aboutus-left {
+    flex: 1;
+}
+
+.aboutus-right {
+    width: 500px;
+    margin-left: 15px
+}
+
+.aboutus-right img {
+    width: 520px;
+    text-align: center;
+    box-shadow: 0px 8px 10px #333
+}
+
+.aboutus-left p {
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.services {
+    display:flex;
+}
+
+.service {
+    flex:1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px
+}
+
+.service:first-child {
+    border-left: 1px solid #333 
+}
+
+.service img {
+    width: 65px;
+    height: 65px
+} 
+
+.service h4 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 18px
+}
+
+.service p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999
+}
+
+.projects {
+    display:flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.filter {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px
+}
+
+.filter ul, .filter li {
+    list-style:none
+}
+
+.filter li {
+    display:inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #ccc;
+    color: #555;
+    border-bottom: 3px solid #eee
+}
+.filter li:hover, .filter .active {
+    border-bottom: 3px solid #b28756
+}
+
+
+.filter li:first-child {
+    border-left: 0px
+}
+
+.photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center
+}
+
+.photo {
+    width: 280px
+}
+
+.photo .photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px
+}
+
+.photo .photoarea img {
+    width: inherit;
+    height: inherit;
+}
+
+.photo .photoarea .photoinfo {
+    position: absolute;
+    background-color: rgba(0,0,0, 0.5);
+    width: inherit;
+    height: inherit;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    color: #fff;
+    flex-direction: column;
+
+}
+
+.photo .photoarea .photoinfo h5 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.photoarea:hover .photoinfo{
+    display:flex;
+}
+
+.imgteam {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding:0
+}
+
+.section-team-area {
+    background-color: rgba(0,0,0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.section-team {
+    overflow: hidden;
+    max-width: 880px;
+    margin:auto
+}
+
+.section-team .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.section-team .slider {
+    width: 280px;
+    height:100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 30px;
+}
+
+.section-team .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items:center;
+    color: #fff;
+    justify-content:center
+}
+
+.section-team-area .sliderpointers {
+    margin-top: 30px;
+    height: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+.section-team-area .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #806343;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer
+}
+
+.section-team-area .pointer.active {
     background-color: #806343
 }
