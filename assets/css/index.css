@@ -64,6 +64,9 @@ header {
     display:flex;
     align-items: center
 }
+.menumobile {
+    display:none
+}
 
 .menu a:hover, .active {
     border-bottom: 4px solid #b28756;
@@ -524,6 +527,7 @@ header {
 }
 
 .cardscontainer {
+    display:flex;   
     width: 950px;
     height: 100%
 }
@@ -882,3 +886,299 @@ header {
 .finalmedias a:hover {
     background-color: #b28756
 } 
+
+@media (min-width: 500px) and (max-width:850px){
+    nav {
+        display:none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0,0,0, 0.91);
+        width: 70vw;
+        height: calc(100vw - 100px);
+        top: 100px;
+        right: 0
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu  a {
+        font-weight: bold;
+        height: 70px;
+        font-size: 25px;
+        margin-left: 50px;
+        border: 0
+    }
+
+    .menu ul a.active {
+        border: 0;
+        color: #b28956;
+
+    }
+
+    .menumobile {
+        display:block;
+        width: 40px;
+        margin-right: 30px;
+    }
+    .logo {
+        margin-left: 30px
+    }
+
+    .aboutus {
+        flex-direction: column;
+    }
+    .aboutus-left {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px
+    }
+    .aboutus-right {
+        width: auto;
+        text-align: center;
+    }
+    .services {
+        flex-wrap: wrap;
+    } 
+    .service {
+        min-width: 50%
+    }
+    .service:first-child {
+        border-left: 0
+    }
+    .section-team {
+        max-width: 580px
+    }
+    .sponsors img {
+        margin-right: 30px;
+    }
+    .cardscontainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cardscontainer .card {
+        min-width: 40%;
+        margin-bottom: 30px;
+    }
+    .cardscontainer {
+        width: auto;
+        justify-content: center;
+    }
+    .premium {
+        flex-direction: column;
+        align-items: center;
+    }
+    .information {
+        align-items: center;
+        margin-top: 30px;
+    }
+    .information div {
+        text-align: center;
+    }
+    .numbers {
+        flex-wrap: wrap;
+    }
+    .number {
+        min-width: 50%;
+    }
+    .margin {
+        margin-top: 0px
+    }
+    .final {
+        flex-direction: column;
+    } 
+    .finalmedias .finalintern {
+        text-align: center;
+    }
+    .final div p{
+        justify-content: center;
+        margin: 30px
+    }
+    .final div p{
+        justify-content: center;
+        margin: 30px
+    }
+    .finalitems {
+        margin:50px
+    }
+    .finalmedias {
+        justify-content: center;
+    }
+}
+
+
+
+
+@media (max-width:450px){
+    nav {
+        display:none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0,0,0, 0.91);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu  a {
+        font-weight: bold;
+        height: 50px;
+        font-size: 17px;
+        margin-left: 30px;
+        border: 0
+    }
+
+    .menu ul a.active {
+        border: 0;
+        color: #b28956;
+
+    }
+
+    .menumobile {
+        display:block;
+        width: 40px;
+        margin-right: 30px;
+    }
+    .banner h1 {
+        font-size: 35px
+    }
+    .banner h2 {
+        font-size: 20px
+    }
+    .logo {
+        margin-left: 30px
+    }
+
+    .aboutus {
+        flex-direction: column;
+    }
+    .aboutus-left {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px
+    }
+    .aboutus-right {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+    }
+    .aboutus-right img {
+        width: 100%
+    }
+    .services {
+        flex-wrap: wrap;
+    } 
+    .service {
+        min-width: 100%
+    }
+    .filter {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .service:first-child {
+        border-left: 0
+    }
+    .section-team {
+        max-width: 280px
+    }
+    .sponsors img {
+        margin-right: 30px;
+    }
+    .sponsors .img {
+        text-align: center;
+    }
+    .book {
+        margin-left: 0px;
+        margin-right: 30px;
+    }
+    .book img {
+        width: 200px
+    }
+    .clients .description {
+        margin: 0px
+    }
+    .cardscontainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cardscontainer .card {
+        min-width: 40%;
+        margin-bottom: 30px;
+    }
+    .cardscontainer {
+        width: auto;
+        justify-content: center;
+    }
+    .premium {
+        flex-direction: column;
+        align-items: center;
+    }
+    .information {
+        align-items: center;
+        margin-top: 30px;
+    }
+    .information div {
+        text-align: center;
+    }
+    .information p {
+        line-height: 15px;
+    }
+    .numbers {
+        flex-wrap: wrap;
+    }
+    .number {
+        min-width: 100%;
+    }
+    .margin {
+        margin-top: 0px
+    }
+    .socialmedias {
+        flex-direction: column;
+    }
+    .socials {
+        margin-bottom: 30px
+    }
+    .input12 .subject {
+        width: 300px
+    }
+    .input12 .message {
+        margin-top: 20px;
+        width: 300px
+    }
+    .map  {
+        padding: 0px;
+        padding-bottom: 250px;
+    }
+    .mapinfo {
+        width: 100%;
+    }
+
+
+
+
+
+
+    .final {
+        flex-direction: column;
+    } 
+    .finalmedias .finalintern {
+        text-align: center;
+    }
+    .final div p{
+        justify-content: center;
+        margin: 30px
+    }
+    .final div p{
+        justify-content: center;
+        margin: 30px
+    }
+    .finalitems {
+        margin:50px
+    }
+    .finalmedias {
+        justify-content: center;
+    }
+}
