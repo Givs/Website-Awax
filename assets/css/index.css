@@ -127,7 +127,7 @@ header {
     transition: 1s;
 }
 
-.banner .button:hover{
+.banner .button:hover, .projects .button:hover{
     background-color: #806343
 }
 
@@ -172,7 +172,7 @@ header {
 
 .default .sectiondesc {
     font-size: 15px;
-    color: #ccc;
+    color: rgb(148, 144, 144);
     margin-top: 13px;
     margin-bottom: 40px
 }
@@ -398,11 +398,12 @@ header {
     flex-direction: column;
     height: 100%;
     align-items:center;
-    color: #fff;
-    justify-content:center
+    color: #000;
+    justify-content:center;
+    padding: 30px
 }
 
-.section-team-area .sliderpointers {
+.section-team-area .sliderpointers, .sliderpointers {
     margin-top: 30px;
     height: 20px;
     display:flex;
@@ -410,7 +411,7 @@ header {
     align-items:center
 }
 
-.section-team-area .pointer {
+.section-team-area .pointer, .pointer {
     width: 15px;
     height: 15px;
     border: 2px solid #806343;
@@ -420,6 +421,209 @@ header {
     cursor: pointer
 }
 
-.section-team-area .pointer.active {
+.section-team-area .pointer.active, .pointer.active {
     background-color: #806343
+}
+
+
+.avatar {
+    width: 150px;
+    height: auto;
+}
+
+.teamname {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px
+}
+
+.teamrole {
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px
+}
+
+.social {
+    display: flex;
+    margin-top: 20px;
+}
+
+.social a{
+    display:inline-flex;
+    justify-content:center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 13px;
+    margin-right: 10px
+}
+
+.social a:hover {
+    background-color: #b28756;
+}
+
+.sectionbody .clients {
+    display:flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.clients .sliderarea img {
+    width: 120px;
+    height: 120px;
+}
+
+.clients .clientname {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px
+}
+
+.clients .clientrole {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 5px
+}
+
+.clients .quote img{
+    width: 20px;
+    height: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.clients .description {
+    margin-right: 300px;
+    margin-left: 300px
+}
+
+.default.ligth.grey {
+    background-color: rgb(243, 243, 243);
+}
+
+.sponsors {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 150px;
+    background-color:#fff
+}
+
+.sponsors img{
+    width:70px;
+    height:35px;
+    margin-right: 70px
+}
+
+.prices {
+    max-width: 900px;
+    margin:auto;
+}
+
+.cardscontainer {
+    width: 950px;
+    height: 100%
+}
+
+.cardscontainer .card {
+    width: 200px;
+    height:100px;
+    min-height: 300px;
+    display: inline-block;
+    margin-right: 30px;
+    background-color: #fff
+}
+
+.default.ligth.grey {
+    background-color:rgb(228, 222, 222)
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px
+}
+
+.card .cardtitle {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.card .cardprice {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 13px
+}
+
+.card .cardmonth {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ccc
+}
+
+.card .carddescription {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #696666
+}
+
+.card .cardbutton a{
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 10px
+}
+
+.card .cardbutton a:hover {
+    background-color: #b28756
+}
+
+
+
+.premium {
+    margin-top:80px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 50px
+}
+
+.book, .information {
+    width: 50%
+}
+
+.information {
+    display:flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.book {
+    margin-left: 100px
+}
+
+.information  h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px
+}
+
+.information p {
+    line-height: 25px;
+}
+
+.center  {
+    text-align: center;
 }
