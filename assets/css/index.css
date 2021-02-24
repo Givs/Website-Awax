@@ -627,3 +627,258 @@ header {
 .center  {
     text-align: center;
 }
+
+.numbers {
+    display: flex
+}
+
+.number {
+    flex:1;
+    text-align: center;
+    padding: 15px
+}
+
+.number h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color:#b28756;
+}
+
+.number h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px
+}
+
+.number h3 {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.margin {
+    margin-top: 30px
+}
+
+.socialmedias {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-right: 20px;
+
+}
+
+.socials {
+    display: flex;
+    margin-right: 20px;
+}
+
+.socials img{
+    margin-right: 10px;
+}
+
+.tlfgp {
+    display: flex;
+}
+
+.tlfgp div {
+    margin-right: 10px;
+    margin-left: 10px
+}
+
+.socialstwitter,.socialslinkeding, .socialsfacebook, .socialsgoogleplus, .socialspinterest {
+    display:flex
+}
+
+.socialstwitter p, .socialslinkeding p, .socialsfacebook p, .socialsgoogleplus p, .socialspinterest p {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin-left: 5px;
+    color: rgb(119, 117, 117);
+    font-size: 12px
+}
+
+.socialstwitter img{
+    background-color: #1DA1F2;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.socialslinkeding img {
+    background-color: #2867B2;
+    border-radius: 15px;
+    padding: 5px
+}
+
+.socialsfacebook img {
+    background-color: #4267B2;
+    border-radius: 20px;
+    padding: 5px
+}
+
+.socialsgoogleplus img {
+    background-color: red;
+    border-radius: 15px;
+    padding: 5px
+}
+
+.socialspinterest img {
+    background-color: red;
+    border-radius: 15px;
+    padding: 5px
+}
+
+.test {
+    display:flex;
+    justify-content:center;
+    align-content: center;
+}
+
+.input12  input{
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    background-color: transparent
+} 
+
+.input12 input:last-child {
+    margin-left: 50px;
+}
+
+.input12 .subject {
+    display: flex;
+    width: 100%
+}
+
+.input12 .message {
+    margin-top: 50px;
+    width: 100%
+}
+
+.map {
+    background-image: url('../images/mapa.jpg');
+    background-size: cover;
+    background-position:center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.maparea {
+    width: 100vw;
+    max-width: 1140px;
+    margin:auto
+}   
+
+.mapinfo {
+    width: 50%;
+    padding: 30px;
+    background-color:#fff;
+    color: #000
+}
+
+.infoitem {
+    display:flex;
+    align-items: center;
+    color: #999;
+    margin-bottom: 10px
+}
+
+.infoitemimg {
+    width: 30px;
+    height: 30px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    padding: 5px;
+    background-color:#999;
+    border-radius:15px;
+    margin-right: 10px
+}
+
+.infoitemimg img {
+    width: 15px;
+    height:auto
+}
+
+.final {
+    display:flex;
+}
+
+.final div {
+    flex: 1;
+    height: auto
+}
+
+.finaltext {
+    line-height: 20px;
+    padding: 15px;
+    text-align: justify;
+    color: #ddd
+}
+.finalmedias {
+    padding: 15px;
+}
+
+.finalmedias .finalintern {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 200px
+}
+
+.finalsubscribe {
+    width: 100%;
+    height: auto;
+    padding: 15px
+}
+
+.finalitems label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 210px;    
+    background-color: rgb(68, 64, 64);
+    border-radius: 10px;
+
+
+}
+
+.finalitems label input {
+    border:none;
+    border-bottom: 1px solid #999;
+    padding: 15px;
+    background-color: transparent;
+    font-size: 15px
+}
+
+.finalitems label a {
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    padding: 10px 30px 10px 30px;
+    background-color: #b28756;
+    color:white
+}
+
+.finalmedias {
+    display:flex
+}
+
+.finalmedias a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(63, 61, 61);
+    border-radius: 13px;
+    margin-right: 10px;
+}
+.finalmedias a:hover {
+    background-color: #b28756
+} 
